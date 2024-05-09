@@ -25,9 +25,6 @@ COPY requirements.txt ./
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy all the program files into the working directory
-COPY ../../Downloads .
-
 # Command to run the application
 CMD ["python", "./main.py"]
 ```
